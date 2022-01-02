@@ -12,7 +12,9 @@ body {
     background: #f1f1f1;
 }
 
+
 /*-------------- Navigation / menu burger --------------*/
+
 
 .nav-gauche {
     width: 300px;
@@ -186,4 +188,108 @@ body {
         transform: rotate(-45deg);
         transition: bottom 300ms ease, transform 300ms 300ms ease;
     }
+}
+
+
+/*-------------- Accueil --------------*/
+
+
+.accueil {
+    background: url(assets/accueil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    min-height: 900px;
+    width: calc(100% - 300px);
+    margin-left: auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Abril Fatface', sans-serif;
+    margin: 0 60px;
+    padding-top: 210px;
+}
+
+.txt-animation {
+    font-size: 30px;
+    margin: 10px 0 10px 60px;
+}
+
+.btn-acc {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.btn-acc1 {
+    margin: 10px 0 0 60px;
+}
+
+.btn-acc2 {
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700;
+}
+
+.medias {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.media {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.media2 {
+    background: transparent;
+    border: 2px solid #333;
+}
+
+.icone-medias {
+    width: 30px;
+}
+
+.btn-rond {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #333;
+    background: #333;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 8px rgba(255,255,255,0.01);
+    }   
+}
+.logo-btn-rond-acc {
+    width: 35px;
 }
