@@ -22,7 +22,7 @@ if(window.matchMedia('(max-width: 1300px)')) {
     })
 }
 
-// Animation écriture
+// Animation écriture - https://github.com/tameemsafi/typewriterjs
 
 const txtAnim = document.querySelector('.txt-animation');
 
@@ -34,7 +34,7 @@ let typewriter = new Typewriter(txtAnim, {
 typewriter
 .pauseFor(1800)
 .changeDelay(20)
-.typeString('Je suis Franck Cario')
+.typeString('Bonjour à tous, je suis Franck Cario')
 .pauseFor(300)
 .typeString(', <strong>Développeur Full-Stack</strong> !')
 .pauseFor(1000)
@@ -45,11 +45,11 @@ typewriter
 .typeString('<span style="color: #ea39ff;">JavaScript</span> !')
 .pauseFor(1000)
 .deleteChars(12)
-.typeString('<span style="color: #midnightblue;">React</span> !')
+.typeString('<span style="color: #27ae60;">WordPress</span> !')
 .pauseFor(1000)
-.deleteChars(7)
-.typeString('<span style="color: #ff6910;">Express</span> !')
+.deleteChars(11)
+.typeString('<span style="color: #ff6910;">ExpressJS</span> !')
 .pauseFor(1000)
-.deleteChars(9)
-.typeString('<span style="color: #27ae60;">Wordpress</span> !')
+.deleteChars(11)
+.typeString('<span style="color: #midnightblue;">ReactJS</span> !')
 .start()
