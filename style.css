@@ -508,10 +508,12 @@ h1 {
     list-style-type: none;
     padding: 10px 0 50px 110px;
 }
+
 .chiffre-style {
     font-family: 'Abril Fatface', sans-serif;
     font-size: 40px;
 }
+
 .txt-liste {
     font-size: 27px;
     display: inline;
@@ -585,3 +587,9 @@ h1 {
         font-size: 17px;
     }
 }
+
+
+/*-------------- Section Presentation --------------*/
+
+
+.

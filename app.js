@@ -34,9 +34,9 @@ let typewriter = new Typewriter(txtAnim, {
 typewriter
 .pauseFor(1800)
 .changeDelay(20)
-.typeString('Bonjour à tous, je suis Franck Cario')
+.typeString('Bonjour à tous, je suis Franck Cario, <br>')
 .pauseFor(300)
-.typeString(', <strong>Développeur web</strong> !')
+.typeString('<strong>Développeur web</strong> !')
 .pauseFor(1000)
 .deleteChars(5)
 .typeString('<span style="color: blue;">Full-Stack</span> !')
