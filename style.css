@@ -804,3 +804,60 @@ h1 {
 .label-skill {
     font-size: 24px;
 }
+
+/* Medias Portfolio */
+
+@media screen and (max-width: 1400px) {
+
+    .grille-skill {
+        grid-template: repeat(3, 80px) / repeat(2, 450px);
+    }
+    .barre-grises {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .section-range {
+        padding-left: 0;
+    }
+    .titre-exp {
+        padding-left: 0;
+    }
+    .grille-skill {
+        grid-template: repeat(6, 80px) / 600px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .grille-skill {
+        grid-template: repeat(6, 80px) / 400px;
+    }
+    .barre-grises {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .section-range {
+        padding-bottom: 100px;
+    }
+    .titre-exp {
+        font-size: 30px;
+        margin: 50px 0 60px 0;
+    }
+    .label-skill {
+        font-size: 20px;
+    }
+    .grille-skill {
+        grid-template: repeat(6, 80px) / 300px;
+        grid-gap: 40px;
+    }
+    .barre-grises {
+        width: 300px;
+    }
+}
