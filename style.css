@@ -919,3 +919,108 @@ h1 {
         margin: 20 0px;
     }
 }
+
+
+/*-------------- Section Contact --------------*/
+
+
+.section-contact {
+    width: 100%;
+    height: auto;
+}
+
+.section-contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding: 70px 0 0 300px;
+}
+
+.section-contact h2 strong {
+    font-weight: 900;
+}
+
+.container-form {
+    margin: 0 auto;
+    width: 70%;
+    padding-left: 300px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s all ease-out;
+    background: #f1f1f1;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+textarea:focus {
+    border-color: #8b97d7;
+}
+
+.form-group:nth-child(4) {
+    margin-bottom: 25px;
+    justify-content: flex-start;
+}
+
+.form-group .button-sub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid rgb(144,144,144);
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-group .button-sub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
