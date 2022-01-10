@@ -1024,3 +1024,12 @@ textarea:focus {
     background-position: 100%;
     border: 3px solid #fff;
 }
+
+/*-------------- Contact Animation--------------*/
+
+.form-group:focus-within label,
+.form-group.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #8b97d7;
+}
