@@ -1040,14 +1040,30 @@ textarea:focus {
     .form-group:nth-child(4) {
         justify-content: center;
     }
-
 }
 
-/*-------------- Contact Animation--------------*/
+/* Contact Animation */
 
 .form-group:focus-within label,
 .form-group.animation label {
     top: 0px;
     transform: translateY(-100%);
     color: #8b97d7;
+}
+
+
+/*-------------- Section Footer --------------*/
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+        padding-left: 0px;
+    }
 }
