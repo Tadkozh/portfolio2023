@@ -890,6 +890,8 @@ h1 {
     padding-left: 300px;
 }
 
+/* Medias Parallax */
+
 @media screen and (max-width: 1300px) {
 
     .txt-par {
@@ -1023,6 +1025,22 @@ textarea:focus {
     color: #fff;
     background-position: 100%;
     border: 3px solid #fff;
+}
+
+/* Medias Contact */
+
+@media screen and (max-width: 1300px) {
+
+    .section-contact h2 {
+        padding: 70px 0 0 0;
+    }
+    .container-form {
+        padding-left: 0;
+    }
+    .form-group:nth-child(4) {
+        justify-content: center;
+    }
+
 }
 
 /*-------------- Contact Animation--------------*/
