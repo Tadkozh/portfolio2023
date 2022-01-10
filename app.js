@@ -57,7 +57,7 @@ typewriter
 .typeString('<span style="color: #midnightblue;">ReactJS</span> !')
 .start()
 
-// Contact Animation
+// Animation Contact
 
 const input_fields = document.querySelectorAll('input');
 
@@ -73,3 +73,16 @@ for(let i = 0; i < input_fields.length; i++) {
         }
     })
 }
+
+// Anim GreenSock-GSAP + ScrollMagic
+
+const navbar = document.querySelector('.nav-gauche');
+
+const TL1 = gsap.timeline({paused: true});
+
+TL1
+.to(navbar, {left: '0px', ease: Power3.easeOut, duration: 0.6})
+
+window.addEventListener('load', () => {
+    TL1.play();
+})
