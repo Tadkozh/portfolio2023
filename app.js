@@ -74,7 +74,7 @@ for(let i = 0; i < input_fields.length; i++) {
     })
 }
 
-// Anim Accueil GreenSock-GSAP + ScrollMagic
+// Animation Accueil GreenSock-GSAP + ScrollMagic
 
 const navbar = document.querySelector('.nav-gauche');
 const titre = document.querySelector('h1');
@@ -95,3 +95,28 @@ TL1
 window.addEventListener('load', () => {
     TL1.play();
 })
+
+// Animation Présentation GSAP + ScrollMagic
+
+const presentationContainer = document.querySelector('.presentation');
+const titrePres = document.querySelector('.titre-pres');
+const presGauche = document.querySelector('.pres-gauche');
+const listePres = document.querySelectorAll('.item-liste');
+
+const tlpres = new TimelineMax();
+
+tlpres
+.from(titrePres, {y: -200, opacity: 0, duration: 0.6})
+.from(presGauche, {y: -20, opacity: 0, duration: 0.6}, '-=0.5')
+.staggerFrom(listePres, 1, {opacity: 0}, 0.2, '-=0.5')
+
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+    triggerElement: presentationContainer,
+    triggerHook: 0.5,
+    reverse: false
+})
+.setTween(tlpres)
+.addIndicators()
+.addTo(controller)
