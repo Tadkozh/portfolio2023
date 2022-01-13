@@ -500,6 +500,10 @@ h1 {
     text-align: justify;
 }
 
+.pres-gauche p a {
+    color: #e7e7e7;
+}
+
 .pres-droite {
     width: 600px;
     flex-shrink: 0;
