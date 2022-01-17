@@ -27,6 +27,7 @@ if(window.matchMedia('(max-width: 1300px)')) {
 const txtAnim1 = document.querySelector('.txt-animation1');
 
 let typewriter1 = new Typewriter(txtAnim1, {
+    cursor: null,
     loop: false,
     deleteSpeed: 20
 })
@@ -42,6 +43,7 @@ typewriter1
 const txtAnim2 = document.querySelector('.txt-animation2');
 
 let typewriter2 = new Typewriter(txtAnim2, {
+    cursor: null,
     loop: true,
     deleteSpeed: 20
 })
@@ -147,7 +149,7 @@ tlPortfolio
 const scene2 = new ScrollMagic.Scene({
     triggerElement: portfolioContainer,
     triggerHook: 0.5,
-    reverse: true
+    reverse: false
 })
 .setTween(tlPortfolio)
 .addTo(controller)
@@ -186,7 +188,7 @@ const scene4 = new ScrollMagic.Scene({
 .setTween(tlPortfolio3)
 .addTo(controller)
 
-// Animation Portfolio GSAP + ScrollMagic
+// Animation Competences GSAP + ScrollMagic
 
 const sectionComp = document.querySelector('.section-range')
 const titreComp = document.querySelector('.titre-exp')
@@ -210,3 +212,18 @@ const scene5 = new ScrollMagic.Scene({
 })
 .setTween(tlCompetences)
 .addTo(controller);
+
+// Effet au clic
+
+window.addEventListener('click', (e) => {
+    //console.log(e);
+    const rond = document.createElement('div');
+    rond.className = 'clickAnim';
+    rond.style.top = `${e.pageY - 50}px`;
+    rond.style.left = `${e.pageX - 50}px`;
+    document.body.appendChild(rond);
+
+    setTimeout(() => {
+        rond.remove();
+    }, 1500)
+})
