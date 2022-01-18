@@ -301,7 +301,7 @@
 
             <div class="item vague6">
                 <div class="cont-img-port">
-                    <img src="assets/2021flow.png" alt="img portfolio">
+                    <img src="assets/testsTDD.gif" alt="img portfolio">
                 </div>
                 <h3>EXPRESS - Music 2021</h3>
                 <p>Réalisation d'une API back en Test Driven Development (<a href="https://www.journaldunet.fr/web-tech/guide-de-l-entreprise-digitale/1443842-test-driven-development-tout-sur-le-developpement-pilote-par-le-test/">TDD</a>) à l'aide de Express</p>
@@ -317,14 +317,14 @@
                 <a href="#" target="_blank" class="btn-projets">Github</a>
             </div>
 
-            <div class="item vague6">
+            <!-- <div class="item vague6">
                 <div class="cont-img-port">
                     <img src="assets/2021flow.png" alt="img portfolio">
                 </div>
                 <h3>Mon fabuleux projet</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, optio.</p>
                 <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
-            </div>
+            </div> -->
         </div>
 
     </section>
@@ -389,27 +389,38 @@
     <!-- Section Contact -->
 
     <section class="section-contact" id="contact">
-
         <h2><strong>Entrons</strong> en contact</h2>
 
         <div class="container-form">
 
-            <form class="form-bloc">
+            <form class="form-bloc" id="contact-form" method="post"  role="form" action="">
 
                 <div class="form-group">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" required maxlength="16" id="prenom">
+                    <label for="name">Nom *</label>
+                    <input type="text" id="name" name="name">
+                    <p class="comments"></p>
                 </div>
+
                 <div class="form-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" required maxlength="16" id="nom">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email">
+                    <p class="comments"></p>
                 </div>
+
                 <div class="form-group">
-                    <textarea id="txt" placeholder="Votre message" required></textarea>
+                    <textarea id="message" name="message" placeholder="Votre message *"></textarea>
+                    <p class="comments"></p>
                 </div>
+
                 <div class="form-group">
-                    <input type="submit" value="ENVOYER" class="button-sub">
+                    <p> <strong>* Ces informations sont requises</strong></p>
                 </div>
+                
+                <div class="form-group">
+                    <input type="submit" class="button-sub" value="ENVOYER">
+                </div>
+                <!-- <a href="index.html#contact">Nouveau message?</a> -->
+
             </form>
         </div>
     </section>
@@ -427,7 +438,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

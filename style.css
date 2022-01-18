@@ -786,25 +786,25 @@ h1 {
 }
 
 .b2 {
-    width: 85%;
+    width: 75%;
     background: rgb(243,237,146);
 }
 
 .b3 {
-    width: 75%;
+    width: 70%;
     background: rgb(243,237,146);
 }
 
 .b4 {
-    width: 70%;
+    width: 80%;
 }
 
 .b5 {
-    width: 90%;
+    width: 70%;
 }
 
 .b6 {
-    width: 75%;
+    width: 80%;
     background: rgb(243,237,146);
 }
 
@@ -812,7 +812,7 @@ h1 {
     font-size: 24px;
 }
 
-/* Medias Range */
+/* Medias Portfolio */
 
 @media screen and (max-width: 1400px) {
     
@@ -960,6 +960,7 @@ h1 {
 .form-group {
     position: relative;
     display: flex;
+    flex-direction: column;
     margin-bottom: 45px;
 }
 
@@ -1009,7 +1010,7 @@ textarea:focus {
     border-color: #8b97d7;
 }
 
-.form-group:nth-child(4) {
+.form-group:nth-child(5) {
     margin-bottom: 25px;
     justify-content: flex-start;
 }
@@ -1017,7 +1018,7 @@ textarea:focus {
 .form-group .button-sub {
     display: block;
     width: auto;
-    padding: 15px 60px;
+    padding: 15px 30px;
     border: 3px solid rgb(144,144,144);
     border-radius: 999px;
     background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
@@ -1034,6 +1035,21 @@ textarea:focus {
     border: 3px solid #fff;
 }
 
+.comments{
+    font-style: italic;
+    font-size: 18px;
+    color: #d82c2e;
+    height: 25px; /*ne s'affiche qu'en cas d'erreur*/
+}
+
+.thank-you{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 /* Medias Contact */
 
 @media screen and (max-width: 1300px) {
@@ -1044,7 +1060,7 @@ textarea:focus {
     .container-form {
         padding-left: 0;
     }
-    .form-group:nth-child(4) {
+    .form-group:nth-child(6) {
         justify-content: center;
     }
 }
@@ -1072,34 +1088,5 @@ footer {
 @media screen and (max-width: 1300px) {
     footer {
         padding-left: 0px;
-    }
-}
-
-
-/*-------------- Effet au clic --------------*/
-
-
-.clickAnim {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(to top, #ff4e50, #f9d423);
-    position: absolute;
-    z-index: 9000;
-    transform: scale(0);
-    transform-origin: center;
-    animation: clickAnim 1s ease-in-out;
-}
-@keyframes clickAnim {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(2);
-        opacity: 1;
-    }
-    0% {
-        transform: scale(0);
-        opacity: 0;
     }
 }
