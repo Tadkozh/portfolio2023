@@ -786,25 +786,25 @@ h1 {
 }
 
 .b2 {
-    width: 75%;
+    width: 85%;
     background: rgb(243,237,146);
 }
 
 .b3 {
-    width: 70%;
+    width: 75%;
     background: rgb(243,237,146);
 }
 
 .b4 {
-    width: 80%;
-}
-
-.b5 {
     width: 70%;
 }
 
+.b5 {
+    width: 90%;
+}
+
 .b6 {
-    width: 80%;
+    width: 75%;
     background: rgb(243,237,146);
 }
 
