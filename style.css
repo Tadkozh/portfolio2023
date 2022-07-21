@@ -13,6 +13,22 @@ body {
 }
 
 
+/*-------------- Reading progress bar  --------------*/
+
+
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  transform-origin: left;
+  transform: scaleX(0);
+  background: linear-gradient(to right, #173df9, #871f97);
+  transition: transform 0.2s ease-out;
+  z-index: 100;
+}
+
+
 /*-------------- Navigation / menu burger --------------*/
 
 
