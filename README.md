@@ -8,4 +8,4 @@ I have selected 18 projects (for the moment) where I have used HTML/CSS, vanilla
 
 You can also see the site in action on line : https://portfolio.infodocbib.net/
 
-![Portfolio 2023](assets/opengraph.png "A panel of 18 projects!")
+![Portfolio 2023](assets/opengraph.jpg "A panel of 18 projects!")
